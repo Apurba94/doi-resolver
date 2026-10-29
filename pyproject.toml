@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "doi-resolver"
+version = "0.1.0"
+description = "Resolve DOIs to BibTeX/CSL-JSON via doi.org content negotiation, with caching and batch mode."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "JANIN A APURBA", email = "japurba97@gmail.com"}]
+keywords = ["research", "automation", "reproducibility", "academic"]
+dependencies = []
+
+[project.scripts]
+doi-resolver = "doi_resolver.cli:main"
+
+[tool.setuptools]
+packages = ["doi_resolver"]
